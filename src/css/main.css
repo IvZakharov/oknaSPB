@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Regular.ttf") format("opentype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Semibold.ttf") format("opentype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Bold.ttf") format("opentype");
+  font-weight: 700; }
+
+body {
+  font-size: 1rem;
+  font-family: 'ProximaNova', sans-serif;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden; }
+
+.wrapper-body {
+  overflow-x: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0; }
+
+.title {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #515151; }
+  .title--grey {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 22px;
+    border-left: 2px solid #e7e7e7;
+    font-weight: 400;
+    color: #717171; }
+
+.text {
+  font-size: 14px;
+  color: #515151; }
+
+.page--window-bg {
+  background: url("../../build/img/window-bg.jpg") no-repeat 50%;
+  background-size: cover; }
+
+.page--blue {
+  background: url("../../build/img/bg-blue.jpg") no-repeat 50%;
+  background-size: cover; }
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 30px;
+    line-height: 30px; }
+    .title--grey {
+      font-size: 20px;
+      line-height: 20px; }
+  .text {
+    font-size: 15px; } }
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 36px; }
+    .title--grey {
+      font-size: 24px;
+      line-height: 24px; } }

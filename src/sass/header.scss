@@ -1,0 +1,192 @@
+.header__top {
+	position: relative;
+	padding: 10px 0;
+}
+
+.header-logo {
+	height: 51px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-left: 1px solid #c6c6c6;
+	padding-left: 10px;
+}
+
+.header-logo__title {
+	font-size: 10px;
+	font-weight: 400;
+	color: #333333;
+}
+
+.logo__address {
+	font-size: 10px;
+	font-weight: 400;
+	color: #333333;
+}
+
+.header-contacts {
+	display: flex;
+	justify-content: left;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	
+	a {
+		margin: 5px 0;
+		
+		&:hover {
+			text-decoration-color: #333333;
+		}
+	}
+
+	span {
+		color: #333333;
+		font-size: 12px;
+		line-height: 20px;
+		font-weight: 400;
+		margin-right: 30px;	
+	}
+}
+
+.header-contacts__icon {
+	display: block;
+	float: left;
+	margin-right: 5px;
+	background: url('../img/sprite.png') no-repeat;
+
+	&--tel {
+		width: 26px;
+		height: 26px;
+		background-position: -155px -128px;
+	}
+
+	&--email {
+		width: 32px;
+		height: 22px;
+		background-position: -110px -77px;
+	}
+}
+
+.burger-menu {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: 20px;
+	z-index: 150;
+
+	width: 28px;
+	height: 4px;
+
+	background: #ff152b;
+	border-radius: 3px;
+
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		top: 9px;
+
+		width: 28px;
+		height: 4px;
+
+		background: #ff152b;
+		border-radius: 3px;
+	}
+
+	&::before {
+		content: "";
+		top: 18px;
+	}
+
+	&--opened {
+		
+		width: 0;
+		height: 0;
+		right: 20px;
+
+		&::after,
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::before {
+			top: 9px;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.burger-menu__trigger {
+	position: absolute;
+	width: 60px;
+	height: 50px;
+	right: -40px;
+	top: -10px;
+	background-color: transparent;
+	z-index: 160;
+}
+
+.header-main {
+	padding: 50px 0;
+}
+
+.header-main__title {
+	margin-bottom: 20px;
+}
+
+.header-main__text {
+	margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+	.burger-menu {
+		display: none;
+	}
+
+	.logo {
+		height: 67px;
+	}
+
+	.logo__title,
+	.logo__address {
+		font-size: 14px;
+	}
+
+	.header__contacts {
+		margin-top: 0px;
+	}
+
+	.header-main {
+		padding: 100px 0;
+	}
+
+	.header-main__title {
+		text-align: left;
+	}
+
+	.header-main__text {
+		margin-bottom: 40px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.header-main {
+		padding-top: 180px;
+		padding-bottom: 200px;
+	}
+
+	.header-main__text {
+		margin-bottom: 60px;
+	}
+}
+
+
+
+
+
+
+
+
